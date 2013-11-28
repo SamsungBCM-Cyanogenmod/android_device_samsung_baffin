@@ -137,3 +137,5 @@ etc/spn-conf.xml
 etc/asound.conf
 etc/sensors.conf
 etc/gps/glconfig.xml
+etc/DiamondVoice_SF_Filter_NB.txt
+etc/DiamondVoice_SF_Filter_WB.txt
