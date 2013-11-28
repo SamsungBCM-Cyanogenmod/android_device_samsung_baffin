@@ -467,6 +467,21 @@ on boot
 
 # SEC_PRODUCT_FEATURE_COMMON_USE_MULTISIM
     setprop ro.multisim.simslotcount 2
+
+# Voice Solution
+    copy /system/etc/DiamondVoice_NB.txt /data/DiamondVoice_NB.txt
+    chmod 0777 /data/DiamondVoice_NB.txt
+    copy /system/etc/DiamondVoice_WB.txt /data/DiamondVoice_WB.txt
+    chmod 0777 /data/DiamondVoice_WB.txt
+    copy /system/etc/DiamondVoice_Filter_NB.txt /data/DiamondVoice_Filter_NB.txt
+    chmod 0777 /data/DiamondVoice_Filter_NB.txt
+    copy /system/etc/DiamondVoice_Filter_WB.txt /data/DiamondVoice_Filter_WB.txt
+    chmod 0777 /data/DiamondVoice_Filter_WB.txt
+    copy /system/etc/DiamondVoice_SF_Filter_NB.txt /data/DiamondVoice_SF_Filter_NB.txt
+    chmod 0777 /data/DiamondVoice_SF_Filter_NB.txt
+    copy /system/etc/DiamondVoice_SF_Filter_WB.txt /data/DiamondVoice_SF_Filter_WB.txt
+    chmod 0777 /data/DiamondVoice_SF_Filter_WB.txt
+    insmod /system/lib/modules/VoiceSolution.ko
     
 on fs
     mount_all /fstab.capri_ss_baffin
